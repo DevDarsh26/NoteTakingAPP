@@ -1,2 +1,2 @@
-Note Takinmg App in recta js.
+Note Taking App in recta js.
 Stores notes in local storage.
