@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+body {
+    background-color: #242424;
+    overflow-x: hidden;
+}
+
+/* Smooth scrolling */
+/* Smooth scrolling for whole page */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Webkit Browsers: Chrome, Edge, Safari */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #242442;
+    /* dark background track */
+    border-radius: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, #ff9900, #ff6600);
+    /* orange gradient thumb */
+    border-radius: 12px;
+    border: 3px solid #242442;
+    /* matches the track for “floating” effect */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(to bottom, #ffb733, #ff4d00);
+    /* hover effect */
+}
+
+::-webkit-scrollbar-thumb:active {
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #ff9900 #242424;
+    /* thumb / track */
+}
